@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* WEB SHIM v1: same viewport defence as the Zorla apps — if the page is
+   laid out at ~1080 CSS px while the real screen is ~390 (Samsung A17),
+   rewrite the viewport meta to the real width. No-op elsewhere. */
+(function(){
+  function fixVp(){
+    try {
+      if (window.innerWidth > screen.width + 50) {
+        var m = document.querySelector('meta[name="viewport"]');
+        if (m) m.setAttribute('content', 'width=' + screen.width + ', initial-scale=1');
+      }
+    } catch (e) {}
+  }
+  fixVp();
+  document.addEventListener('DOMContentLoaded', fixVp);
+  addEventListener('load', function(){ fixVp(); setTimeout(fixVp, 350); });
+  addEventListener('resize', fixVp);
+})();
+</script>
+<title>Terms & Conditions — Zorla</title>
+<meta name="description" content="Zorla Terms & Conditions — Zorla by Hunain Tech Solution, Lahore.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:#F7FAF7;color:#14231A;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{background:#0B3D1E;color:#fff;padding:16px 0}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{width:42px;height:42px;border-radius:11px;background:#1E7D32;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:#fff}
+.brand b{font-size:23px}
+.brand span{display:block;font-size:12px;opacity:.85;font-weight:600}
+.card{background:#fff;border:1px solid #E2EAE3;border-radius:16px;padding:26px 24px;margin:22px 0;box-shadow:0 8px 24px rgba(20,83,45,.07)}
+h1{font-size:27px;color:#14532D;margin-bottom:12px}
+h3{font-size:16.5px;color:#14532D;margin:18px 0 6px}
+p{margin:0 0 9px;color:#33473A}
+ul{margin:0 0 9px 20px;color:#33473A}
+a{color:#1E7D32;font-weight:600}
+footer{border-top:1px solid #E2EAE3;padding:18px 0 26px;font-size:13.5px;color:#5B6B60}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand"><div class="mark">Z</div><div><b>Zorla</b><span>Zorla Karo, Kaam Done!</span></div></div></div></header>
+<main class="wrap"><div class="card"><h1>Terms & Conditions</h1>
+<p>These terms explain how Zorla works and what you can expect from us, from our service partners, and what we ask from you. By creating an account or booking a service on Zorla, you agree to these terms.</p>
+<h3>1. What Zorla is</h3>
+<p>Zorla is a home-services platform operated by <b>Hunain Tech Solution</b>, Lahore, Pakistan. Zorla connects customers with independent, identity-verified service partners (installers and technicians) for installation, repair and maintenance work at homes and offices across Pakistan.</p>
+<h3>2. Fixed prices, shown before you book</h3>
+<p>Every service on Zorla shows its fixed price before you book. The price you see at the time of booking is the price you pay for the work listed in that service, including the items listed under "Includes". If a job needs extra work or materials that are not included, the partner must explain and agree the extra cost with you <b>before</b> starting that extra work.</p>
+<h3>3. Payment</h3>
+<p>Payment is made in <b>cash on completion</b>: you check the finished work and then pay the partner the amount shown on your booking and receipt. Please do not pay in advance for a standard booking.</p>
+<h3>4. The 10% platform share</h3>
+<p>Zorla keeps a platform share of <b>10%</b> out of the service price. This share comes out of the booked price — it is never added on top for the customer. The split is printed openly on every receipt: on a Rs 3,000 job, Rs 2,700 goes to the partner and Rs 300 is the platform share.</p>
+<h3>5. The 7-day service guarantee</h3>
+<p>Workmanship on every completed job is covered for <b>7 days</b> from the day the job is completed. If the same fault comes back within those 7 days, tell us through the complaint option in the Zorla app, or call the Zorla helpline 0321-1680194 — and the partner will re-visit and put the work right without a labour charge. The guarantee covers the work that was done; it does not cover new faults, damage from misuse, or parts and materials that you bought yourself.</p>
+<h3>6. Cancellation and rescheduling</h3>
+<p>You may cancel or reschedule a booking free of charge at any time before the partner leaves for your address. If you must cancel later, please inform us as early as you can. Repeated late cancellations or no-shows may limit future bookings.</p>
+<h3>7. What we ask of partners</h3>
+<p>Partners on Zorla are independent professionals whose identity we verify by CNIC. A partner must arrive on time, bring his own tools, use his own materials unless the booked service lists materials as included, behave respectfully in your home, and charge only the booked price (plus any extra you agreed in advance under section 2). Partners remit the 10% platform share to Zorla from the amounts they collect.</p>
+<h3>8. What we ask of customers</h3>
+<p>Please give a correct address and a phone number where you can be reached, be present at the booked time (or arrange for someone to be there), and pay the agreed amount when the job is complete.</p>
+<h3>9. Our responsibility</h3>
+<p>Zorla works to match you with a verified partner and stands behind the 7-day guarantee above. If something goes wrong with a booking, our responsibility is limited to the amount paid for that booking. Nothing in these terms takes away any right you have under the laws of Pakistan.</p>
+<h3>10. Changes and contact</h3>
+<p>We may update these terms from time to time; the current version is always the one shown here and in the Zorla apps. Questions about these terms: <b>Hunain Tech Solution, Lahore</b> — please use the Help / support option inside the Zorla app, or call the Zorla helpline 0321-1680194.</p>
+<p><i>Last updated: 10 November 2026</i></p>
+
+</div></main>
+<footer><div class="wrap"><a href="zorla-privacy.html">Privacy Policy</a><a href="zorla-website.html">Zorla Website</a><br><br>© 2026 Hunain Tech Solution, Lahore</div></footer>
+</body>
+</html>

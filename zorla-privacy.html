@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* WEB SHIM v1: same viewport defence as the Zorla apps — if the page is
+   laid out at ~1080 CSS px while the real screen is ~390 (Samsung A17),
+   rewrite the viewport meta to the real width. No-op elsewhere. */
+(function(){
+  function fixVp(){
+    try {
+      if (window.innerWidth > screen.width + 50) {
+        var m = document.querySelector('meta[name="viewport"]');
+        if (m) m.setAttribute('content', 'width=' + screen.width + ', initial-scale=1');
+      }
+    } catch (e) {}
+  }
+  fixVp();
+  document.addEventListener('DOMContentLoaded', fixVp);
+  addEventListener('load', function(){ fixVp(); setTimeout(fixVp, 350); });
+  addEventListener('resize', fixVp);
+})();
+</script>
+<title>Privacy Policy — Zorla</title>
+<meta name="description" content="Zorla Privacy Policy — Zorla by Hunain Tech Solution, Lahore.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:#F7FAF7;color:#14231A;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+header{background:#0B3D1E;color:#fff;padding:16px 0}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{width:42px;height:42px;border-radius:11px;background:#1E7D32;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:#fff}
+.brand b{font-size:23px}
+.brand span{display:block;font-size:12px;opacity:.85;font-weight:600}
+.card{background:#fff;border:1px solid #E2EAE3;border-radius:16px;padding:26px 24px;margin:22px 0;box-shadow:0 8px 24px rgba(20,83,45,.07)}
+h1{font-size:27px;color:#14532D;margin-bottom:12px}
+h3{font-size:16.5px;color:#14532D;margin:18px 0 6px}
+p{margin:0 0 9px;color:#33473A}
+ul{margin:0 0 9px 20px;color:#33473A}
+a{color:#1E7D32;font-weight:600}
+footer{border-top:1px solid #E2EAE3;padding:18px 0 26px;font-size:13.5px;color:#5B6B60}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand"><div class="mark">Z</div><div><b>Zorla</b><span>Zorla Karo, Kaam Done!</span></div></div></div></header>
+<main class="wrap"><div class="card"><h1>Privacy Policy</h1>
+<p>This policy explains, in plain words, what information Zorla collects, why we collect it, and the choices you have. Zorla is operated by <b>Hunain Tech Solution</b>, Lahore, Pakistan.</p>
+<h3>1. What we collect</h3>
+<p><b>From customers:</b> your name, phone number, the address where the service is to be done, and your booking details (service, time, price and job history).</p>
+<p><b>From partners:</b> your name, phone number, CNIC number, your trade, your working area and your years of experience.</p>
+<h3>2. Why we collect it</h3>
+<ul>
+<li>To take your booking and send the right partner to the right address.</li>
+<li>To verify a partner's identity by CNIC, so customers can trust who is coming to their home.</li>
+<li>To show your receipts, job history and guarantee status.</li>
+<li>To contact you about your booking — for example if a partner is running late.</li>
+<li>To improve our services and keep the platform safe and fair.</li>
+</ul>
+<h3>3. What we never do</h3>
+<p>We <b>never sell</b> your personal information, and we do not share it with advertisers. A partner sees only the details needed for your booking (such as your address and phone number for that job). A customer sees a partner's name, trade, rating and work profile — never the partner's CNIC.</p>
+<h3>4. Who holds your information</h3>
+<p>Your information stays with <b>Hunain Tech Solution</b>, the operator of Zorla. It is not passed to any other company except where the law requires it.</p>
+<h3>5. Keeping and deleting your information</h3>
+<p>We keep booking records while your account is active, so your receipts and guarantee claims remain available. You may ask us to delete your personal information at any time — use the Help / support option inside the Zorla app, or call the Zorla helpline 0321-1680194, and we will delete it, except for any record we are required to keep for accounts or legal reasons.</p>
+<h3>6. Contact</h3>
+<p>Questions about this policy or about your information: <b>Hunain Tech Solution, Lahore</b> — please use the Help / support option inside the Zorla app, or call the Zorla helpline 0321-1680194.</p>
+<p><i>Last updated: 10 November 2026</i></p>
+
+</div></main>
+<footer><div class="wrap"><a href="zorla-terms.html">Terms & Conditions</a><a href="zorla-website.html">Zorla Website</a><br><br>© 2026 Hunain Tech Solution, Lahore</div></footer>
+</body>
+</html>
